@@ -1,6 +1,6 @@
 ## Code Submission - Ewan Roberts
 
-I have followed a Domain Driven Development approach and looking forward to hearing your thoughts! :)
+I have followed a Domain Driven Development approach and look forward to hearing your thoughts! :)
 
 ## Steps for setup:
 
@@ -63,12 +63,11 @@ data_access_layer/user
 
   domain_layer/venue
     get_users_choices()
-      ✓ returns all venues when no mismatch
       ✓ returns correct schema for a user who cant drink in a venue
       ✓ returns correct schema for a user who cant eat in a venue
       ✓ returns correct schema for two users who cant eat or drink in a venue
 
-  8 passing (17ms)
+  7 passing (17ms)
   ```
 
 Any questions do get in touch at `ewan-roberts@hotmail.com`
