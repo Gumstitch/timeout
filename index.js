@@ -19,7 +19,7 @@ const REQUEST_SCHEMA = joi.object().keys({
 
 function parse_input_parameters(event) {
   const {
-    'value': validated_path_parameters,
+    'value': validated_parameters,
     'error': path_validation_error,
   } = REQUEST_SCHEMA.validate(event.body);
 
@@ -27,7 +27,7 @@ function parse_input_parameters(event) {
     throw new Error(path_validation_error);
   }
 
-  const { names } = validated_path_parameters;
+  const { names } = validated_parameters;
 
   return {
     names,
