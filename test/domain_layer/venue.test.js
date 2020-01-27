@@ -10,12 +10,8 @@ const data_access_layer = {
 };
 
 describe('domain_layer/venue', function() {
+  
   describe('get_users_choices()', function() {
-    it('returns all venues when no mismatch', function() {
-      const result = domain_layer.venue.get_users_match([ 'John Davis' ]);
-      expect(result).to.be.ok;
-    });
-
     it('returns correct schema for a user who cant drink in a venue', function() {
       const { venues } = data_access_layer.venue.retrieve();
       const user = domain_layer.user.find_by_name('Robert Webb');
